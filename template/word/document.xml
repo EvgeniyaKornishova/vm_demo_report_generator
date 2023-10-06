@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+    xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex"
+    xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex"
+    xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex"
+    xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex"
+    xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex"
+    xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex"
+    xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex"
+    xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex"
+    xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink"
+    xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d"
+    xmlns:o="urn:schemas-microsoft-com:office:office"
+    xmlns:oel="http://schemas.microsoft.com/office/2019/extlst"
+    xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+    xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"
+    xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+    xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+    xmlns:w10="urn:schemas-microsoft-com:office:word"
+    xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+    xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+    xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
+    xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex"
+    xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid"
+    xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml"
+    xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash"
+    xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex"
+    xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+    xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk"
+    xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+    xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+    mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh wp14">
+    <w:body>
+        <w:p w14:paraId="458573F3" w14:textId="26E197D7" w:rsidR="00E96451" w:rsidRPr="00A04AB9"
+            w:rsidRDefault="00AC1440" w:rsidP="00A04AB9">
+            <w:pPr>
+                <w:pStyle w:val="Heading1" />
+                <w:spacing w:line="276" w:lineRule="auto" />
+            </w:pPr>
+            <w:r>
+                <w:t>VR DEMO PROJECT</w:t>
+            </w:r>
+            <w:r w:rsidR="00A04AB9" w:rsidRPr="00A04AB9">
+                <w:t xml:space="preserve"> </w:t>
+            </w:r>
+            <w:r w:rsidR="00A04AB9">
+                <w:t>WEEKLY REPORT</w:t>
+            </w:r>
+        </w:p>
+        <w:p w14:paraId="344C78F8" w14:textId="378AC78E" w:rsidR="002547D4"
+            w:rsidRDefault="00AC1440" w:rsidP="0099376D">
+            <w:pPr>
+                <w:pStyle w:val="Heading3" />
+                <w:spacing w:before="0" />
+            </w:pPr>
+            <w:bookmarkStart w:id="0" w:name="_Hlk62032425" />
+            <w:r>
+                <w:t>GENERAL</w:t>
+            </w:r>
+        </w:p>
+        <w:p id="DONE_TASK_LIST_GENERAL" w14:paraId="0B5DB4B3" w14:textId="282F410A">
+            <w:pPr>
+                <w:spacing w:after="0" />
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+                <w:t>Done:</w:t>
+            </w:r>
+        </w:p>
+        <w:p id="IN_PROGRESS_TASK_LIST_GENERAL" w14:paraId="0B5DB4B3" w14:textId="282F410A" w:rsidR="005A0529" w:rsidRPr="005D04B9"
+            w:rsidRDefault="00A04AB9" w:rsidP="005D04B9">
+            <w:pPr>
+                <w:spacing w:before="60" w:after="0" />
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00D93929">
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+                <w:t>In-progress:</w:t>
+            </w:r>
+        </w:p>
+        <w:p id="PLANNED_TASK_LIST_GENERAL" w14:paraId="273A5351" w14:textId="1191F9F7" w:rsidR="00D2322E" w:rsidRPr="005D04B9"
+            w:rsidRDefault="009E71D7" w:rsidP="005D04B9">
+            <w:pPr>
+                <w:spacing w:before="60" w:after="0" />
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+                <w:t>Planned:</w:t>
+            </w:r>
+        </w:p>
+        <w:p w14:paraId="43B24CD9" w14:textId="0B46BBC5" w:rsidR="008A04D0" w:rsidRPr="00A37D1B"
+            w:rsidRDefault="00AC1440" w:rsidP="00A37D1B">
+            <w:pPr>
+                <w:pStyle w:val="Heading3" />
+            </w:pPr>
+            <w:r>
+                <w:t xml:space="preserve">3D ASSETS</w:t>
+            </w:r>
+            <w:bookmarkEnd w:id="0" />
+        </w:p>
+        <w:p id="DONE_TASK_LIST_3D_ASSETS" w14:paraId="5F7C8959" w14:textId="4AC8B9F0">
+            <w:pPr>
+                <w:spacing w:after="0" />
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+                <w:t>Done:</w:t>
+            </w:r>
+        </w:p>
+        <w:p id="IN_PROGRESS_TASK_LIST_3D_ASSETS" w14:paraId="5F7C8959" w14:textId="4AC8B9F0" w:rsidR="004027D6" w:rsidRPr="005D04B9"
+            w:rsidRDefault="0099376D" w:rsidP="005D04B9">
+            <w:pPr>
+                <w:spacing w:before="60" w:after="0" />
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+                <w:t>In-progress:</w:t>
+            </w:r>
+        </w:p>
+        <w:p id="PLANNED_TASK_LIST_3D_ASSETS" w14:paraId="647CAA1A" w14:textId="4BB71C62" w:rsidR="004027D6" w:rsidRPr="005D04B9"
+            w:rsidRDefault="004027D6" w:rsidP="005D04B9">
+            <w:pPr>
+                <w:spacing w:before="60" w:after="0" />
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+                <w:t>Planned:</w:t>
+            </w:r>
+        </w:p>
+        <w:p w14:paraId="2C3B368E" w14:textId="3AFC673D" w:rsidR="00615C66"
+            w:rsidRDefault="00AC1440" w:rsidP="00AC1440">
+            <w:pPr>
+                <w:pStyle w:val="Heading3" />
+                <w:spacing w:line="240" w:lineRule="auto" />
+            </w:pPr>
+            <w:r>
+                <w:t>ANDROID / STREAMING SDK</w:t>
+            </w:r>
+        </w:p>
+        <w:p id="DONE_TASK_LIST_ANDROID" w14:paraId="127D8CEC" w14:textId="523EBBCA">
+            <w:pPr>
+                <w:spacing w:after="0" />
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+                <w:t>Done:</w:t>
+            </w:r>
+        </w:p>
+        <w:p id="IN_PROGRESS_TASK_LIST_ANDROID" w14:paraId="127D8CEC" w14:textId="523EBBCA" w:rsidR="00D2322E" w:rsidRPr="005D04B9"
+            w:rsidRDefault="0099376D" w:rsidP="005D04B9">
+            <w:pPr>
+                <w:spacing w:before="60" w:after="0" />
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+                <w:t>In-progress:</w:t>
+            </w:r>
+        </w:p>
+        <w:p id="PLANNED_TASK_LIST_ANDROID" w14:paraId="71DEFAC9" w14:textId="31317ABF" w:rsidR="00D2322E" w:rsidRPr="005D04B9"
+            w:rsidRDefault="00D2322E" w:rsidP="005D04B9">
+            <w:pPr>
+                <w:spacing w:before="60" w:after="0" />
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+                <w:t>Planned:</w:t>
+            </w:r>
+        </w:p>
+        <w:p w14:paraId="389403FE" w14:textId="1485F0C5" w:rsidR="0099376D"
+            w:rsidRDefault="008B19EE" w:rsidP="0099376D">
+            <w:pPr>
+                <w:pStyle w:val="Heading3" />
+            </w:pPr>
+            <w:r>
+                <w:lastRenderedPageBreak />
+                <w:t>UNREAL ENGINE</w:t>
+            </w:r>
+        </w:p>
+        <w:p id="DONE_TASK_LIST_UNREAL" w14:paraId="138758D2" w14:textId="63A2A9EF">
+            <w:pPr>
+                <w:spacing w:after="0" />
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+                <w:t>Done:</w:t>
+            </w:r>
+        </w:p>
+        <w:p id="IN_PROGRESS_TASK_LIST_UNREAL" w14:paraId="138758D2" w14:textId="63A2A9EF" w:rsidR="000831B0" w:rsidRPr="005D04B9"
+            w:rsidRDefault="0099376D" w:rsidP="005D04B9">
+            <w:pPr>
+                <w:spacing w:before="60" w:after="0" />
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+            </w:pPr>
+            <w:bookmarkStart w:id="1" w:name="_Hlk141879350" />
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+                <w:t>In-progress:</w:t>
+            </w:r>
+            <w:bookmarkEnd w:id="1" />
+        </w:p>
+        <w:p id="PLANNED_TASK_LIST_UNREAL" w14:paraId="6C00A8CC" w14:textId="7DD00A8B" w:rsidR="00D2322E" w:rsidRPr="005D04B9"
+            w:rsidRDefault="004027D6" w:rsidP="005D04B9">
+            <w:pPr>
+                <w:spacing w:before="60" w:after="0" />
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI"
+                        w:cs="Segoe UI" />
+                    <w:color w:val="242424" />
+                    <w:sz w:val="21" />
+                    <w:szCs w:val="21" />
+                    <w:lang w:val="en-US" />
+                </w:rPr>
+                <w:t>Planned:</w:t>
+            </w:r>
+        </w:p>
+        <w:sectPr w:rsidR="00D2322E" w:rsidRPr="005D04B9" w:rsidSect="0088279A">
+            <w:headerReference w:type="default" r:id="rId11" />
+            <w:footerReference w:type="default" r:id="rId12" />
+            <w:pgSz w:w="11909" w:h="16834" />
+            <w:pgMar w:top="851" w:right="1134" w:bottom="1134" w:left="1418" w:header="397"
+                w:footer="567" w:gutter="0" />
+            <w:pgNumType w:start="1" />
+            <w:cols w:space="720" />
+            <w:docGrid w:linePitch="299" />
+        </w:sectPr>
+    </w:body>
+</w:document>
