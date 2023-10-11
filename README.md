@@ -1,4 +1,4 @@
-# VM Demo report generator
+# VR Demo report generator
 
 ## Installation
 ```
