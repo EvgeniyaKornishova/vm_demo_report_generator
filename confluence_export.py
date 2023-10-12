@@ -3,11 +3,10 @@ import re
 import requests
 import json
 from lxml import html
-from datetime import datetime, timedelta
+from datetime import datetime
 from typing import Dict
 from copy import deepcopy
 from common import Projects
-from calendar import MONDAY
 
 CONFLUENCE_TOKEN = os.environ["CONFLUENCE_TOKEN"]
 
@@ -19,26 +18,26 @@ projects_confluence_names = {
 }
 
 
-def _request_projects_statuses_page(report_date: datetime) -> html.Element:
-    url = "https://luxproject.luxoft.com/confluence/rest/api/content"
-
+def _request_two_last_reports() -> tuple:
+    url = "https://luxproject.luxoft.com/confluence/rest/api/content/search"
     headers = {
         "Accept": "application/json",
         "Authorization": f"Bearer {CONFLUENCE_TOKEN}",
     }
 
     response = requests.get(
-        f"{url}/?title=VR Project meeting {report_date.strftime('%d.%m.%Y')}&expand=body.storage",
+        f'{url}/?cql=type = Page AND title ~ "VR Project meeting " order by created desc&limit=2&expand=body.storage',
         headers=headers,
     )
 
-    page_content = json.loads(response.text)["results"][0]["body"]["storage"]["value"]
-    return html.fromstring(page_content)
+    results = response.json()["results"]
+    old = html.fromstring(results[1]["body"]["storage"]["value"])
+    new = html.fromstring(results[0]["body"]["storage"]["value"])
+    return (old, new)
 
 
-def _get_projects_info(report_date: datetime):
-    tree = _request_projects_statuses_page(report_date)
 
+def _get_projects_info(html_report: html.Element):
     projects_info: Dict = {}
 
     for project in projects_confluence_names:
@@ -46,7 +45,7 @@ def _get_projects_info(report_date: datetime):
         projects_info[project] = []
 
         # find project block
-        project_name_el = tree.xpath(
+        project_name_el = html_report.xpath(
             f"//strong[contains(text(),'{project_name}')] | //strong/span[contains(text(),'{project_name}')]"
         )[0]
         project_name_el = project_name_el.xpath("ancestor::p[1]")[0]
@@ -59,7 +58,7 @@ def _get_projects_info(report_date: datetime):
             # get task info
             task_body = html.tostring(task_el.xpath("./task-body")[0].xpath("./span")[0]).decode()
             while "</span>" in task_body:
-                task_body = re.findall(r'>(.*?)</span>$', task_body)[0]
+                task_body = "".join(re.findall(r'>(.*?)</span>(.*)$', task_body)[0])
 
             # remove weird character
             task_body = task_body.replace("\u00a0", "")
@@ -85,15 +84,12 @@ def _get_projects_info(report_date: datetime):
     return projects_info
 
 
-def get_tasks(report_date: datetime):
-    offset = (report_date.weekday() - MONDAY) % 7
-    last_monday = report_date - timedelta(days=offset)
-
-    previous_monday = last_monday - timedelta(weeks=1)
-
+def get_tasks():
     # get info about projects on this week and previous
-    old_projects_info = _get_projects_info(report_date=previous_monday)
-    new_projects_info = _get_projects_info(report_date=last_monday)
+    old, new = _request_two_last_reports()
+
+    old_projects_info = _get_projects_info(old)
+    new_projects_info = _get_projects_info(new)
 
     # combine info
     # filter previous week tasks (only completed)
@@ -114,8 +110,9 @@ def get_tasks(report_date: datetime):
 if __name__ == "__main__":
     # Tasks
     print("Tasks:")
-    tasks = get_tasks(datetime.today())
+    tasks = get_tasks()
     for project in projects_confluence_names:
         print(projects_confluence_names[project] + ":")
         print(json.dumps(tasks[project], indent=4))
+
 

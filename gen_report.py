@@ -102,7 +102,7 @@ def main():
     # Update tasks
     print("Step 1/3 - Constructing task list...")
 
-    tasks = get_tasks(report_date)
+    tasks = get_tasks()
 
     for project in tasks:
         for task in tasks[project]:
