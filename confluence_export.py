@@ -46,7 +46,7 @@ def _get_projects_info(html_report: html.Element):
 
         # find project block
         project_name_el = html_report.xpath(
-            f"//strong[contains(text(),'{project_name}')] | //strong/span[contains(text(),'{project_name}')]"
+            f"//strong[contains(text(),'{project_name}:')] | //strong/span[contains(text(),'{project_name}:')]"
         )[0]
         project_name_el = project_name_el.xpath("ancestor::p[1]")[0]
 
@@ -56,7 +56,8 @@ def _get_projects_info(html_report: html.Element):
         # enumerate all project tasks
         for task_el in task_list_el.xpath("./task"):
             # get task info
-            task_body = html.tostring(task_el.xpath("./task-body")[0].xpath("./span")[0]).decode()
+            task_body = html.tostring(task_el.xpath("./task-body")[0]).decode()
+            task_body = re.findall(r'<task-body>(.*?)</task-body>$', task_body)[0]
             while "</span>" in task_body:
                 task_body = "".join(re.findall(r'>(.*?)</span>(.*)$', task_body)[0])
 
