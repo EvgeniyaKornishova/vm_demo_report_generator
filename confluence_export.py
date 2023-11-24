@@ -36,7 +36,6 @@ def validate_token():
 # validate token on module's load
 validate_token()
 
-
 def _request_two_last_reports() -> tuple:
     url = "https://luxproject.luxoft.com/confluence/rest/api/content/search"
     headers = {
