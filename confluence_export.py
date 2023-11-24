@@ -17,6 +17,25 @@ projects_confluence_names = {
     Projects.Unreal_Engine: "Unreal Engine",
 }
 
+def validate_token():
+    headers = {
+        "Accept": "application/json",
+        "Authorization": f"Bearer {CONFLUENCE_TOKEN}",
+    }
+
+    response = requests.get(
+        "https://luxproject.luxoft.com/confluence/rest/api/user/current",
+        headers=headers,
+    )
+
+    if response.json()['type'] == "anonymous": 
+        print("ERROR: Confluence token 'CONFLUENCE_TOKEN' is invalid!")
+        exit(-1)
+
+
+# validate token on module's load
+validate_token()
+
 
 def _request_two_last_reports() -> tuple:
     url = "https://luxproject.luxoft.com/confluence/rest/api/content/search"
