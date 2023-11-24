@@ -8,7 +8,7 @@ import word
 import ids
 from lxml import etree
 
-REPORT_FILE_PATH = "./VR Demo Project report {date}.docx"
+REPORT_FILE_PATH = "./VR-Demo-Weekly-Report-{date}.docx"
 
 def template_validation(tree) -> bool:
     # validate presence of all ids in template
@@ -86,7 +86,7 @@ def highlight_links(text: str) -> list:
 def main():
     # eval report dates
     report_date = datetime.today()
-    report_path = REPORT_FILE_PATH.format(date=report_date.strftime("%d-%m-%Y"))
+    report_path = REPORT_FILE_PATH.format(date=report_date.strftime("%d-%B-%Y"))
 
     prepare_working_directory(report_path)
 

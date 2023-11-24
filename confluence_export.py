@@ -17,6 +17,24 @@ projects_confluence_names = {
     Projects.Unreal_Engine: "Unreal Engine",
 }
 
+def validate_token():
+    headers = {
+        "Accept": "application/json",
+        "Authorization": f"Bearer {CONFLUENCE_TOKEN}",
+    }
+
+    response = requests.get(
+        "https://luxproject.luxoft.com/confluence/rest/api/user/current",
+        headers=headers,
+    )
+
+    if response.json()['type'] == "anonymous": 
+        print("ERROR: Confluence token 'CONFLUENCE_TOKEN' is invalid!")
+        exit(-1)
+
+
+# validate token on module's load
+validate_token()
 
 def _request_two_last_reports() -> tuple:
     url = "https://luxproject.luxoft.com/confluence/rest/api/content/search"
@@ -46,7 +64,7 @@ def _get_projects_info(html_report: html.Element):
 
         # find project block
         project_name_el = html_report.xpath(
-            f"//strong[contains(text(),'{project_name}')] | //strong/span[contains(text(),'{project_name}')]"
+            f"//strong[contains(text(),'{project_name}:')] | //strong/span[contains(text(),'{project_name}:')]"
         )[0]
         project_name_el = project_name_el.xpath("ancestor::p[1]")[0]
 
@@ -56,7 +74,8 @@ def _get_projects_info(html_report: html.Element):
         # enumerate all project tasks
         for task_el in task_list_el.xpath("./task"):
             # get task info
-            task_body = html.tostring(task_el.xpath("./task-body")[0].xpath("./span")[0]).decode()
+            task_body = html.tostring(task_el.xpath("./task-body")[0]).decode()
+            task_body = re.findall(r'<task-body>(.*?)</task-body>$', task_body)[0]
             while "</span>" in task_body:
                 task_body = "".join(re.findall(r'>(.*?)</span>(.*)$', task_body)[0])
 
